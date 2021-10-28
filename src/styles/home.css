@@ -1,0 +1,66 @@
+.content-home{
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6)
+    ),url('http://www.alucine.es/wp-content/uploads/2015/05/491.jpg');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.header .navbar {
+    background-color: transparent !important;
+  }
+
+.navbar-brand{
+    color: #0B5ED7;
+    margin-left: 5%;
+}
+
+.entry{
+    margin-top: 10%;
+}
+
+.h1-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 3.2rem;
+    margin-top: 0;
+}
+
+.h2-description{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.h3-option{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media screen and (max-width:700px) {
+
+    .h1-title{
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,18 @@
+.sidebar{
+    background-color: white;
+    width: 30%;
+    height: 100vh;
+}
+
+.links{
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width:700px) {
+    .sidebar{
+        width: 100%;
+        height: auto;
+    }
+    
+}
