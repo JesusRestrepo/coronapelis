@@ -1,15 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import icono from '../img/icono.png'
 
 import '../styles/home.css'
 
 const home = () => {
+
+    const click = (e) => {
+        e.preventDefault();
+        window.location="/dashboard";
+    }
+
   return (
     <>
         <div className="content-home">
             <header className="header">
                 <nav className="navbar">
-                    <Link className="navbar-brand" to="/"><h2>Coronapelis</h2></Link>
+                    <Link className="navbar-brand" to="/"><h2><img src={icono} alt="logo"/>Play!</h2></Link>
                 </nav> 
             </header>
             
@@ -24,9 +31,7 @@ const home = () => {
                     ¿Quieres empezar?
                 </h3>
                 <div className="button">
-                    <Link to="/dashboard">
-                        <button className="btn btn-primary btn-lg mt-2">Ingresa ahora</button>
-                    </Link>
+                    <button className="button btn-primary btn-lg mt-2" onClick={click}>Ingresa ahora</button>
                 </div>
             </div>
         </div>

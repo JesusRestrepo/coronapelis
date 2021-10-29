@@ -1,18 +1,43 @@
 .sidebar{
     background-color: white;
-    width: 30%;
+    width: 20%;
     height: 100vh;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
 }
 
 .links{
     text-align: center;
     width: 100%;
+    margin-top: 50%;
+}
+
+.buttons{
+    margin-top: 20%;
+}
+
+.btn{
+    width: 90%;
+    text-align: center;
 }
 
 @media screen and (max-width:700px) {
     .sidebar{
         width: 100%;
         height: auto;
+        padding-bottom: 10%;
+    }
+
+    .links{
+        margin-top: 10%;
+    }
+
+    .buttons{
+        margin-top: 5%;
     }
     
 }
