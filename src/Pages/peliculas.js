@@ -1,7 +1,22 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Sidebar from '../components/Sidebar'
+import { obtenerPeliculas } from '../utils/api'
 
-const peliculas = () => {
+const Peliculas = () => {
+    useEffect(() => {
+        const fetchPeliculas = async () => {
+            await obtenerPeliculas(
+                (response) => {
+                    console.log('se recibio', response.data.result);
+                },
+                (error) => {
+                    console.log('ocurrio error', error)
+                }
+            );
+        };
+        fetchPeliculas();
+    })
+
     return (
         <div className="content">
             <Sidebar />
@@ -12,4 +27,4 @@ const peliculas = () => {
     )
 }
 
-export default peliculas
+export default Peliculas
